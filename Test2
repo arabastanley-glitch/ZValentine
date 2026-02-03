@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Valentine?</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffe6ea, #fff);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 22px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .yes {
+      background-color: #e63946;
+      color: white;
+    }
+
+    .no {
+      background-color: #f1f1f1;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Hey ❤️</h1>
+    <p>
+      I’ve really enjoyed getting to know you,<br/>
+      and I was wondering…
+      <br/><br/>
+      <strong>Will you be my Valentine?</strong>
+    </p>
+
+    <div class="buttons">
+      <button class="yes" onclick="yesClicked()">Yes 💖</button>
+      <button class="no" onclick="noClicked()">No</button>
+    </div>
+  </div>
+
+  <script>
+    function yesClicked() {
+      window.location.href = "https://example.com/yes";
+    }
+
+    function noClicked() {
+      window.location.href = "https://example.com/no";
+    }
+  </script>
+</body>
+</html>
